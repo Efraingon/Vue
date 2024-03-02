@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div>
+            <label id="lbtarea">Tareas</label>
+            <input type="text" id="tarea" v-model="valor"><br>
+            <a href="https://www.codigoClick.com">Ir a pagina </a>
+            <button v-on:click="agregartarea">Agregar Tarea</button>
+        </div>
+        <ul>
+            <li v-for="tarea in tareas">{{ tarea }} </li>        
+        </ul>
+    </div>
+    <script src="https://unpkg.com/vue@3.4.19/dist/vue.global.prod.js"></script> 
+
+    <script src="app.js"></script>    
+</body>
+</html>
